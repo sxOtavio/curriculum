@@ -1,0 +1,14 @@
+/* RESET GLOBAL REAL */
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* CENTRALIZA O ROOT */
+body {
+  display: flex;
+  justify-content: center; /* CENTRALIZA A PÁGINA */
+  background-color: #0f172a;
+}

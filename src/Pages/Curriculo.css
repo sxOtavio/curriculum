@@ -1,0 +1,134 @@
+/* ================= CURRICULUM ================= */
+.curriculum {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ================= HEADER ================= */
+.cv-header {
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #0f172a;
+  width: 100%;
+}
+
+.cv-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.cv-location {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+}
+
+.cv-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.cv-contacts span,
+.cv-contacts a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.cv-contacts a:hover {
+  color: var(--primary);
+}
+
+/* ================= SECTIONS ================= */
+.cv-section {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.cv-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text);
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* ================= TEXT ================= */
+.cv-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 800px;
+}
+
+/* ================= LISTAS ================= */
+.cv-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cv-list li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* ================= ITEMS ================= */
+.cv-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.cv-item h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+  text-align: center;
+}
+
+.cv-item p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.cv-period,
+.cv-current {
+  font-size: 0.85rem;
+  color: var(--primary);
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  .curriculum {
+    padding: 3rem 1.5rem;
+  }
+
+  .cv-name {
+    font-size: 1.8rem;
+  }
+
+  .cv-contacts {
+    gap: 0.8rem;
+  }
+}
