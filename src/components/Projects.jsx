@@ -1,8 +1,8 @@
-import imagemCalculadora from "../Img/calculadora.png";
-import imagemTodolist from "../Img/to-do-list.png";
-import imagemEqualize from "../Img/equalize.png";
-import imagemLojaCelulares from "../Img/siteCelulares2.png";
-import imagemProjectA1E5 from "../Img/javaProjetctA1E5.png";
+import imagemCalculadora from "../img/calculadora.png";
+import imagemTodolist from "../img/to-do-list.png";
+import imagemEqualize from "../img/equalize.png";
+import imagemLojaCelulares from "../img/siteCelulares2.png";
+import imagemProjectA1E5 from "../img/javaProjetctA1E5.png";
 import JavaProject from "./JavaProjetctA5E1";
 
 function Projects() {
