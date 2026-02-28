@@ -3,7 +3,7 @@ import imagemTodolist from "../img/to-do-list.png";
 import imagemEqualize from "../img/equalize.png";
 import imagemLojaCelulares from "../img/siteCelulares2.png";
 import imagemProjectA1E5 from "../img/javaProjetctA1E5.png";
-import JavaProject from "./JavaProjetctA5E1";
+
 
 function Projects() {
   return (
