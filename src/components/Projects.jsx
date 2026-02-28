@@ -2,7 +2,7 @@ import imagemCalculadora from "../Img/calculadora.png";
 import imagemTodolist from "../Img/to-do-list.png";
 import imagemEqualize from "../Img/equalize.png";
 import imagemLojaCelulares from "../Img/siteCelulares2.png";
-import imagemProctA1E5 from "../Img/javaProjetctA1E5.png";
+import imagemProjectA1E5 from "../Img/javaProjetctA1E5.png";
 import JavaProject from "./JavaProjetctA5E1";
 
 function Projects() {
@@ -101,7 +101,7 @@ function Projects() {
             <h3>Projeto Java</h3>
           </div>
           <div>
-            <img src={imagemProctA1E5} alt="" srcset="" />
+            <img src={imagemProjectA1E5} alt="" srcset="" />
           </div>
           <div>
             <h4>
@@ -121,7 +121,7 @@ function Projects() {
             <h3>Projeto Java</h3>
           </div>
           <div>
-            <img src={imagemProctA1E5} alt="" srcset="" />
+            <img src={imagemProjectA1E5} alt="" srcset="" />
           </div>
           <div>
             <h4>asdasd</h4>
