@@ -1,4 +1,4 @@
-import imagemPerfil from "../Img/imgProfile.png";
+import imagemPerfil from "../img/imgProfile.png";
 function Profile() {
   return (
     <div className="profile">
