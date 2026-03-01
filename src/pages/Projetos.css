@@ -1,19 +1,35 @@
-/* VARIÁVEIS DE COR — TEMA CIANO */
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #020617;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= VARIÁVEIS ================= */
 :root {
   --bg: #020617;
-  --bg-light: #020617;
   --primary: #22d3ee;
   --text: #e5e7eb;
   --text-muted: #94a3b8;
 }
 
-/* CONTAINER PRINCIPAL */
+/* ================= CONTAINER ================= */
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1100px;
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   background-color: var(--bg);
   color: var(--text);
 }
@@ -23,7 +39,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   padding: 1.2rem;
   border-bottom: 1px solid #0f172a;
 }
@@ -32,35 +49,36 @@
   background: none;
   border: none;
   color: var(--text);
-  font-size: 1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  transition: color 0.3s, transform 0.2s;
+  transition: 0.3s;
 }
 
 .navBar button:hover {
   color: var(--primary);
   transform: translateY(-2px);
 }
+
 .navBar a {
   text-decoration: none;
   color: var(--primary);
-  transform: translateY(-2px);
 }
-/* CONTAINER GERAL */
+
+/* ================= PROJECTS GRID ================= */
 .projectsContainer {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
 }
 
-/* CARD DO PROJETO */
+/* CARD */
 .projects {
-  background-color: #020617; /* fundo escuro */
+  background-color: #020617;
   border: 1px solid #22d3ee33;
   border-radius: 16px;
   padding: 20px;
@@ -70,7 +88,7 @@
   align-items: center;
   text-align: center;
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s;
 }
 
 .projects:hover {
@@ -78,14 +96,12 @@
   box-shadow: 0 0 25px #22d3ee44;
 }
 
-/* TÍTULO */
 .projects h3 {
-  color: #22d3ee;
+  color: var(--primary);
   font-size: 1.1rem;
   margin-bottom: 12px;
 }
 
-/* IMAGEM */
 .projects img {
   width: 100%;
   max-width: 220px;
@@ -93,25 +109,37 @@
   object-fit: cover;
 
   border-radius: 12px;
-  background-color: #020617;
   border: 1px solid #22d3ee33;
-
   margin-bottom: 12px;
 }
 
-/* DESCRIÇÃO */
 .projects h4 {
-  color: #e5e7eb;
+  color: var(--text);
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.4;
 }
 
-/* RESPONSIVO EXTRA */
-@media (max-width: 480px) {
-  .projectsContainer {
-    padding: 20px 10px;
-  }
+/* ================= TERMINAL ================= */
+/* ✅ AGORA FUNCIONA EM TODAS AS TELAS */
+.terminal {
+  background-color: #111827;
+  color: #e5e7eb;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Fira Code", monospace;
+  position: relative;
+  padding-left: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.terminal::before {
+  content: "$";
+  position: absolute;
+  left: 15px;
+  color: #22d3ee;
+  font-weight: bold;
 }
 
 /* ================= FOOTER ================= */
@@ -132,16 +160,15 @@
 .footer div {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin: 1rem 0;
-  flex-wrap: wrap;
 }
 
 .footer a {
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s;
+  transition: 0.3s;
 }
 
 .footer a:hover {
@@ -150,29 +177,28 @@
 
 /* ================= RESPONSIVO ================= */
 @media (max-width: 768px) {
-  .profile {
+
+  .projectsContainer {
+    padding: 25px 15px;
+  }
+
+  .projects img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .projectsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .navBar {
+    gap: 0.5rem;
+  }
+
+  .footer div {
     flex-direction: column;
-    text-align: center;
+    gap: 0.6rem;
   }
-
-  .profile h3 {
-    max-width: 100%;
-  }
-  .terminal {
-    background-color: #2d2d2d;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    font-family: 'Fira Code', monospace;
-    position: relative;
-    padding-left: 40px; /* Espaço para o símbolo */
-}
-
-.terminal::before {
-    content: "$"; /* Símbolo do terminal */
-    position: absolute;
-    left: 15px;
-    color: #00ff00; /* Cor verde para o $ */
-    font-weight: bold;
-}
 }
