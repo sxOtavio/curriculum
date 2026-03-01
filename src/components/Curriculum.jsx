@@ -1,4 +1,4 @@
-import DownloadButton from "./DownloadButton";
+
 function Curriculum() {
 
     return (

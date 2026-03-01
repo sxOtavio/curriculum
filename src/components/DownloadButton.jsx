@@ -1,6 +1,6 @@
 function DownloadButton() {
   
-  const arquivoUrl = '../Files/curriculo.pdf';
+  const arquivoUrl = '/curriculo.pdf';
 
   return (
     <a href={arquivoUrl} download="curriculo.pdf">
