@@ -9,7 +9,7 @@ function Footer() {
           <a href="#">🔗 LinkedIn | GitHub</a>
           <a href="#">📍 Brasília – DF</a>
         </div>
-        <h3>Java • Spring Boot • MySQL • Web</h3>
+        <h3>Java • MySQL • Node.js • React.js • WordPress</h3>
       </div>
     </>
   );

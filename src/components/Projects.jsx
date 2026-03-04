@@ -4,7 +4,6 @@ import imagemEqualize from "../img/equalize.png";
 import imagemLojaCelulares from "../img/siteCelulares2.png";
 import imagemProjectA1E5 from "../img/javaProjetctA1E5.png";
 
-
 function Projects() {
   return (
     <>
@@ -62,7 +61,8 @@ function Projects() {
         <div
           className="projects"
           onClick={() => {
-            window.location.href = "#";
+            window.location.href =
+              "https://projetocadastrocompras.onrender.com/";
           }}
         >
           <div>
@@ -72,7 +72,14 @@ function Projects() {
             <img src={imagemLojaCelulares} alt="" />
           </div>
           <div>
-            <h4>Não postado ainda</h4>
+            <h4>
+              Site dinâmico que apresenta uma lista de produtos com imagens.
+              Inclui painel administrativo protegido por senha (criptografada)
+              para cadastro e exclusão de itens. Desenvolvido com Node.js,
+              Express, PostgreSQL e EJS, com upload de imagens e deploy na nuvem
+              (Render). Solução completa para gerenciamento simples de portfólio
+              de produtos.
+            </h4>
           </div>
         </div>
         <div
@@ -88,7 +95,11 @@ function Projects() {
             <img src={imagemEqualize} alt="" srcset="" />
           </div>
           <div>
-            <h4>Desenvolvimento de site em WordPress com configuração de domínio, DNS e certificado SSL, garantindo segurança e estabilidade da aplicação.</h4>
+            <h4>
+              Desenvolvimento de site em WordPress com configuração de domínio,
+              DNS e certificado SSL, garantindo segurança e estabilidade da
+              aplicação.
+            </h4>
           </div>
         </div>
         <div
