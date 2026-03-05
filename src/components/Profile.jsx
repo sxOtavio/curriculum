@@ -7,23 +7,33 @@ function Profile() {
       </div>
       <div>
         <h3>
-          Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em
-          desenvolvimento web e fundamentos de infraestrutura e segurança da
-          informação. Tenho experiência prática com Java, Spring Boot, MySQL,
-          WordPress, JavaScript, HTML, CSS, wordPress, e Bootstrap, além de
-          familiaridade com conceitos de redes, servidores e
-          cibersegurança.
-        </h3>
-        <h3>
-          Atualmente atuo como auxiliar administrativo, função que me
-          proporcionou forte desenvolvimento em organização, responsabilidade,
-          visão de processos e resolução de problemas, habilidades que aplico
-          diretamente em ambientes de tecnologia e trabalho em equipe. Tenho
-          perfil analítico, sou curioso por novas tecnologias e busco constante
-          evolução técnica, tanto no desenvolvimento de sistemas quanto na área
-          de infraestrutura e segurança. Meu objetivo é iniciar e consolidar
-          minha carreira em TI, contribuindo com soluções eficientes, seguras e
-          bem estruturadas.
+          Sobre Mim Desde pequeno, eu era fascinado por entender como as coisas
+          funcionavam. Minha primeira grande descoberta foi com um kit de
+          Arduino que ganhei de presente. Lembro da empolgação ao ver um LED
+          piscar com algumas linhas de código – ali percebi que programar era
+          uma forma de dar vida às ideias. Foi meu primeiro contato com lógica e
+          a sensação de criar algo do zero. </h3> <br/>
+          
+          <h3> No Instituto Federal de Brasília,
+          durante o curso técnico em Eletromecânica, essa paixão se aprofundou.
+          Ao programar em Ladder para controlar sistemas automatizados, entendi
+          como o raciocínio lógico podia resolver problemas do mundo real. Cada
+          novo projeto era um desafio que unia teoria e prática, e eu sabia que
+          queria seguir por esse caminho. </h3> <br/>
+          <h3>Hoje, cursando Análise e
+          Desenvolvimento de Sistemas na Universidade Católica de Brasília, e
+          tendo passado pela UnB em disciplinas de programação, vejo o quanto
+          essas experiências foram fundamentais. A base que construí com Arduino
+          e Ladder me deu uma perspectiva única: programação não é só código, é
+          solução, criatividade e impacto.</h3><br/>
+          <h3>Fora da tecnologia, trabalhei em
+          áreas como atendimento e logística, o que me ensinou a me comunicar,
+          organizar e resolver problemas sob pressão, habilidades que levo para
+          qualquer time. Sou movido por desafios e estou sempre buscando
+          aprender algo novo, seja uma linguagem, um framework ou uma forma
+          melhor de colaborar. Se você procura alguém com vontade de crescer,
+          que já provou ter resiliência e que enxerga a programação como
+          ferramenta de transformação, vamos conversar!
         </h3>
       </div>
     </div>

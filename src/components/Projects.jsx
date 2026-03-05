@@ -109,16 +109,17 @@ function Projects() {
           }}
         >
           <div>
-            <h3>Projeto Java</h3>
+            <h3>Projeto "Programação Orientada a Objetos"</h3>
           </div>
           <div>
             <img src={imagemProjectA1E5} alt="" srcset="" />
           </div>
           <div>
             <h4>
-              Crie uma classe chamada Funcionario com os atributos (nome, cpf e
-              salário). * Crie uma classe Professor, que é um Funcionário e, *
-              além dos dados de funcionário, tem a titulação e ...
+              (Terminal simulado)
+              <br /> Crie uma classe chamada Funcionario com os atributos (nome,
+              cpf e salário). * Crie uma classe Professor, que é um Funcionário
+              e, * além dos dados de funcionário, tem a titulação e ...
             </h4>
           </div>
         </div>
@@ -135,7 +136,7 @@ function Projects() {
             <img src={imagemProjectA1E5} alt="" srcset="" />
           </div>
           <div>
-            <h4>asdasd</h4>
+            <h4>Em desenvolvimento</h4>
           </div>
         </div>
       </div>
