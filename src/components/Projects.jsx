@@ -3,7 +3,7 @@ import imagemTodolist from "../img/to-do-list.png";
 import imagemEqualize from "../img/equalize.png";
 import imagemLojaCelulares from "../img/siteCelulares2.png";
 import imagemProjectA1E5 from "../img/javaProjetctA1E5.png";
-
+import imagemKanBunny from "../img/kanbunny.png";
 function Projects() {
   return (
     <>
@@ -79,6 +79,29 @@ function Projects() {
               Express, PostgreSQL e EJS, com upload de imagens e deploy na nuvem
               (Render). Solução completa para gerenciamento simples de portfólio
               de produtos.
+            </h4>
+          </div>
+        </div>
+                <div
+          className="projects"
+          onClick={() => {
+            window.location.href =
+              "https://releitura-trello-react.vercel.app/";
+          }}
+        >
+          <div>
+            <h3>kanBunny "Kanban Board" (React.js)</h3>
+          </div>
+          <div>
+            <img src={imagemKanBunny} alt="" srcset="" />
+          </div>
+          <div>
+            <h4>
+              Desenvolvi uma aplicação de gerenciamento de tarefas kanban, criado com o objetivo de praticar organização de tarefas, gerenciamento de estado e visualização de produtividade através de gráficos.
+              A ideia foi construir algo inspirado em ferramentas reais de gestão, permitindo mover tarefas entre colunas, acompanhar métricas e visualizar o fluxo de trabalho de forma simples e interativa
+              furamente o projeto será evoluído para utilizar uma API RESTful com backend em Python mas hoje roda com api em node.js.
+
+
             </h4>
           </div>
         </div>
