@@ -1,63 +1,72 @@
 import imagemCalculadora from "../img/calculadora.png";
 import imagemTodolist from "../img/to-do-list.png";
 import imagemEqualize from "../img/equalize.png";
+import imagemMMP from "../img/MMP.png"
+import imagemITA from "../img/ITA.png"
 import imagemLojaCelulares from "../img/siteCelulares2.png";
+import imagemSiteCelulares1 from "../img/siteCelulares1.png";
 import imagemProjectA1E5 from "../img/javaProjetctA1E5.png";
 import imagemKanBunny from "../img/kanbunny.png";
+
 function Projects() {
   return (
     <>
+    <h1>Projetos com foco de PoC, MVP ou Implementado</h1>
       <div className="projectsContainer">
+        {/* MMP - E-commerce */}
         <div
           className="projects"
           onClick={() => {
-            window.location.href = "https://calculadora-rosy-three.vercel.app/";
+            window.open("https://mmp-navy.vercel.app/", "_blank");
           }}
         >
           <div>
-            <h3>Projeto calculadora (React.js)</h3>
+            <h3>MMP - E-commerce (Arquitetura Distribuída)</h3>
           </div>
           <div>
             <img
-              src={imagemCalculadora}
-              alt="Imagem de uma calculadora virtual"
+              src={imagemMMP}
+              alt="MMP E-commerce arquitetura distribuída"
             />
           </div>
           <div>
             <h4>
-              Desenvolvi uma aplicação de calculadora web utilizando React.js,
-              com foco na prática de conceitos fundamentais de desenvolvimento
-              front-end e manipulação de estado. A aplicação realiza operações
-              matemáticas básicas (adição, subtração, multiplicação e divisão),
-              permitindo ao usuário inserir valores e visualizar o resultado de
-              forma dinâmica e responsiva.
+              Plataforma full stack (Next.js/Node.js) suportando 4.157 produtos simultâneos.
+              Separação de front-end (Vercel) e API de imagens (Homelab) para garantir resiliência
+              sistêmica. Integração com a API do PagBank, suportando testes de carga de 20+
+              transações/minuto com estabilidade.
             </h4>
           </div>
         </div>
+
+        {/* Instituto Tempo de Alegria */}
         <div
           className="projects"
           onClick={() => {
-            window.location.href =
-              "https://to-do-list-react-ecru-sigma.vercel.app";
+            window.open("https://ita-estrutural-bsb.com.br", "_blank");
           }}
         >
           <div>
-            <h3>Projeto To-do-list (React.js)</h3>
+            <h3>Instituto Tempo de Alegria — Projeto Purim (Next.js)</h3>
           </div>
           <div>
-            <img src={imagemTodolist} alt="" srcset="" />
+            <img
+              src={imagemITA}
+              alt="Plataforma Web Instituto Tempo de Alegria"
+            />
           </div>
           <div>
             <h4>
-              Desenvolvi uma aplicação de gerenciamento de tarefas (To Do List)
-              utilizando React.js, com foco na prática de conceitos essenciais
-              de desenvolvimento front-end, manipulação de estado e organização
-              de componentes. A aplicação permite adicionar, editar, concluir e
-              remover tarefas, oferecendo uma interface simples e intuitiva para
-              organização pessoal.
+              Desenvolvimento de ponta a ponta da plataforma web do Instituto Tempo de Alegria (Projeto Purim),
+              traduzindo requisitos reais em software funcional. Front-end construído com Tailwind CSS
+              e integração com Back-end as a Service (Supabase) para autonomia na gestão de dados.
             </h4>
           </div>
         </div>
+
+      
+
+        
         <div
           className="projects"
           onClick={() => {
@@ -105,12 +114,70 @@ function Projects() {
             </h4>
           </div>
         </div>
+      </div>
+
+{/*------------------------- Tratando projetos de foco academico ------------------------------*/ }
+
+
+        <h1>Projetos com foco de estudo</h1>
+        
+        <div className="projectsContainer">
+
+            {/* Projeto Calculadora */}
+        <div
+          className="projects"
+          onClick={() => {
+            window.open("https://calculadora-rosy-three.vercel.app/", "_blank");
+          }}
+        >
+          <div>
+            <h3>Projeto Calculadora (React.js)</h3>
+          </div>
+          <div>
+            <img
+              src={imagemCalculadora}
+              alt="Imagem de uma calculadora virtual"
+            />
+          </div>
+          <div>
+            <h4>
+              Aplicação de calculadora web desenvolvida em React.js, com foco em manipulação
+              de estado, layout responsivo e operações matemáticas fundamentais de forma dinâmica.
+            </h4>
+          </div>
+        </div>
+
+
+
+{/* Projeto To-do-list */}
+        <div
+          className="projects"
+          onClick={() => {
+            window.open("https://to-do-list-react-ecru-sigma.vercel.app", "_blank");
+          }}
+        >
+          <div>
+            <h3>Projeto To-do-list (React.js)</h3>
+          </div>
+          <div>
+            <img src={imagemTodolist} alt="Lista de tarefas em React" />
+          </div>
+          <div>
+            <h4>
+              Aplicação de gerenciamento de tarefas (To Do List) em React.js, permitindo
+              adicionar, editar, concluir e remover tarefas com persistência e interface limpa.
+            </h4>
+          </div>
+        </div>
+
+
         <div
           className="projects"
           onClick={() => {
             window.location.href = "https://espacoterapeuticoequalize.blog/";
           }}
         >
+          
           <div>
             <h3>Projeto WordPress</h3>
           </div>
@@ -125,17 +192,22 @@ function Projects() {
             </h4>
           </div>
         </div>
+        {/*
         <div
           className="projects"
           onClick={() => {
             window.location.href = "#";
           }}
         >
-          <div>
+        
+        
+          caso eu queira expor projetos de faculdade
+        
+        <div>
             <h3>Projeto "Programação Orientada a Objetos"</h3>
           </div>
           <div>
-            <img src={imagemProjectA1E5} alt="" srcset="" />
+            <img src={imagemProjectA1E5} alt="" srcset="https://github.com/sxOtavio/exerciciosFaculdade" />
           </div>
           <div>
             <h4>
@@ -145,23 +217,10 @@ function Projects() {
               e, * além dos dados de funcionário, tem a titulação e ...
             </h4>
           </div>
+          
+
         </div>
-        <div
-          className="projects"
-          onClick={() => {
-            window.location.href = "#";
-          }}
-        >
-          <div>
-            <h3>Projeto Java</h3>
-          </div>
-          <div>
-            <img src={imagemProjectA1E5} alt="" srcset="" />
-          </div>
-          <div>
-            <h4>Em desenvolvimento</h4>
-          </div>
-        </div>
+        */}  
       </div>
     </>
   );
